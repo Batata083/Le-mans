@@ -62,6 +62,80 @@
             </div>
         </div>
     </section>
+   
+   <section id="ingressos" class="container">
+    <div class="secao-titulo">
+        <h2>Nossos Ingressos</h2>
+        <p>Escolha sua experiência para as 24 Horas de Le Mans.</p>
+        <div class="linha-decorativa"></div>
+    </div>
+
+    <div class="ingressos-grid">
+
+        <div class="stat-box ingresso-card">
+            <h3>Fanzone</h3>
+            <p>Shows e entrevistas exclusivas</p>
+            <strong>R$ 200,00</strong>
+             <button onclick="adicionarPedido('Fanzone', 200)" class="btn-comprar">
+    Adicionar ao Pedido
+        </div>
+
+        <div class="stat-box ingresso-card">
+            <h3>Individual</h3>
+            <p>Acesso padrão à corrida</p>
+            <strong>R$ 400,00</strong>
+            <button onclick="adicionarPedido('Individual', 400)" class="btn-comprar">
+    Adicionar ao Pedido
+</button>
+
+        </div>
+
+        <div class="stat-box ingresso-card">
+            <h3>VIP</h3>
+            <p>Salas exclusivas e simuladores</p>
+            <strong>R$ 1.000,00</strong>
+          <button onclick="adicionarPedido('VIP', 1000)" class="btn-comprar">
+    Adicionar ao Pedido
+</button>
+        </div>
+
+        <div class="stat-box ingresso-card">
+            <h3>Pit Lane</h3>
+            <p>Acesso próximo às equipes</p>
+            <strong>R$ 2.300,00</strong>
+             <button onclick="adicionarPedido('Pit Lane', 2300)" class="btn-comprar">
+    Adicionar ao Pedido
+</button>
+        </div>
+<!-- CARRINHO -->
+<section class="carrinho">
+    <h2>Meu Pedido</h2>
+
+    <ul id="lista-pedidos"></ul>
+
+    <p class="total">
+        Total: R$ <span id="total">0,00</span>
+    </p>
+
+    <button onclick="finalizarPedido()">
+        Finalizar Pedido
+    </button>
+</section>
+    </div>
+</section>
+    <div class="mapa">
+        <h2>Localização da pista</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5344.029736915137!2d0.20207664914890847!3d47.95543655512541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e28fad5242c195%3A0xe9ae326c6c02c174!2sCircuito%20de%20La%20Sarthe!5e0!3m2!1spt-BR!2sbr!4v1781266053560!5m2!1spt-BR!2sbr" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+    </div>
 
     <section id="categorias" class="categorias">
         <div class="container">
@@ -141,6 +215,7 @@
     <footer>
         <p>&copy; 2026 Le Mans Fan Hub. Website informativo desenvolvido para fãs de desporto motorizado.</p>
     </footer>
-
+<script src="script.js"></script>
+</body>
 </body>
 </html>
