@@ -192,6 +192,7 @@ header {
     margin: 15px auto 0 auto;
 }
 
+
 /* Seção Sobre / Grid de Estatísticas */
 .sobre-grid {
     display: grid;
@@ -233,7 +234,13 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
+.mapa{  
+    text-align: center;
+    font-size: 2rem;
+    color: var(--texto-claro);
+    margin-bottom: 5px;
+    font-weight: 800;
+}
 /* Seção Categorias */
 .categorias {
     background-color: var(--bg-secundario);
@@ -387,4 +394,109 @@ footer p {
     .sobre-stats {
         grid-template-columns: 1fr;
     }
+    
+}
+.stat-box strong{
+    display: block;
+    margin-top: 10px;
+    color: var(--amarelo-farol);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.ingressos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.ingresso-card {
+    width: 260px;
+    text-align: center;
+}
+
+.ingresso-card strong {
+    display: block;
+    margin: 15px 0;
+    color: var(--amarelo-farol);
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.btn-comprar {
+    margin-top: 10px;
+    background-color: var(--vermelho-racing);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: #b80500;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CARRINHO
+========================= */
+
+.carrinho {
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--bg-secundario);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.carrinho h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--amarelo-farol);
+    font-size: 2rem;
+}
+
+#lista-pedidos {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#lista-pedidos li {
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    color: var(--texto-claro);
+}
+
+.total {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--amarelo-farol);
+    margin: 20px 0;
+}
+
+.carrinho button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--vermelho-racing);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carrinho button:hover {
+    background-color: #b80500;
+    transform: translateY(-2px);
 }
